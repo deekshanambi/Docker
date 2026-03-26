@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: html-demo
-        image: deeksha1906/html-demo:latest
+        image: deeksha1906/html-demo
         ports:
         - containerPort: 80
 
