@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CI/CD Profile Demo</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif; /* [cite: 41] */
+            background-color: #af0d0d; /*  */
+            color: white;
+            padding: 50px;
+        }
+        h1 {
+            color: #0ef777; /* [cite: 45] */
+            text-transform: uppercase;
+        }
+        .profile-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid #0ef777;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 500px;
+        }
+        .status-badge {
+            background-color: #0ef777;
+            color: #af0d0d;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CI/CD Pipeline Active</h1> <h2>Deployed via Jenkins + Docker + Kubernetes</h2> <div class="profile-card">
+        <h3>User Profile: DevSecOps Learner</h3>
+        <p><strong>Role:</strong> Automation Engineer</p>
+        <p><strong>Status:</strong> <span class="status-badge">Online</span></p>
+        <hr>
+        <p>This profile page was automatically built and deployed using a full DevOps lifecycle. 
+           Any changes pushed to Git are reflected here instantly!</p> </div>
+
+    <p style="margin-top: 30px;">
+        Accessing via Port: <strong>30010</strong> </p>
+</body>
+</html>+
