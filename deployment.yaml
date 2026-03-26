@@ -1,23 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: html-demo
+ name: html-demo
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: html-demo
-  template:
-    metadata:
-      labels:
-        app: html-demo
-    spec:
-      containers:
-      - name: html-demo
-        image: deeksha1906/html-demo
-        ports:
-        - containerPort: 80
-
+ replicas: 2
+ selector:
+ matchLabels:
+ app: html-demo
+ template:
+ metadata:
+ labels:
+ app: html-demo
+ spec:
+ containers:
+ - name: html-demo
+ image: swetab84/html-demo:latest
+ ports:
+ - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
